@@ -1,0 +1,66 @@
+.faq {
+	margin: 35px 0;
+
+	.faq__title {
+		font-size: 32px;
+		line-height: 35px;
+		font-family: neo_sans_probold;
+	}
+
+	.faq__element {
+		padding: 5px 10px 0 43px;
+		border-radius: 10px;
+		margin: 12px 0 12px 0;
+
+		a {
+			font-size: 20px;
+			line-height: 25px;
+			font-family: open_sansbold;
+			text-decoration: none;
+			color: $black;
+			border-bottom: 1px dashed $black;
+			position: relative;
+
+			&:hover {
+				color: $blue;
+				border-color: $blue;
+			}
+
+			&:after {
+				background: url("../img/sprite-arrow.png") -31px 0 no-repeat;
+				content: "";
+				width: 31px;
+				height: 31px;
+				display: block;
+				position: absolute;
+				left: -38px;
+				top: 1px;
+			}
+
+		}
+
+		p {
+			margin: 5px 0 0 0;
+			font-size: 16px;
+			line-height: 22px;
+			font-family: open_sansregular;
+			display: none;
+			padding-bottom: 15px;
+		}
+
+	}
+
+	.faq__element-active {
+		background: $white;
+
+		a {
+
+			&:after {
+				background-position: 0;
+			}
+
+		}
+
+	}
+
+}

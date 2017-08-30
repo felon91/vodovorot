@@ -1,0 +1,30 @@
+.phone {
+	
+	a {
+		font-size: 25px;
+		line-height: 16px;
+		color: $darkblue;
+		text-decoration: none;
+		font-family: open_sansextrabold;
+	}
+
+	p {
+		font-size: 13px;
+		line-height: 16px;
+		color: $blue;
+		font-family: open_sans_condensedbold;
+	}
+
+}
+
+.phone-white {
+	
+	a {
+		color: $white;
+	}
+
+	p {
+		color: $white;
+	}
+
+}

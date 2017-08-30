@@ -1,0 +1,27 @@
+.button {
+
+	a {
+		font-size: 18px;
+		line-height: 25px;
+		color: $white;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-family: open_sans_condensedbold;
+		background: #00b9cc;
+		padding: 4px 16px;
+		border-bottom: 3px solid #0096a7;
+		border-radius: 10px;
+	
+		&:hover {
+			background-color: $buttonhover;
+		}
+
+		&:active {
+			background-color: $buttonactive;
+			border-color: $buttonactive;
+		}
+
+	}
+
+}

@@ -1,0 +1,214 @@
+.menu {
+	background: $darkblue;	
+
+	.menu__nav {
+		@include min-max(320px, 1200px, 40px);
+		display: flex;
+
+		li {
+			margin-right: 20px;
+			position: relative;
+			padding: 9px 0 11px;
+
+			a {
+				text-decoration: none;
+				color: $white;
+				font-size: 16px;
+				line-height: 16px;
+				font-family: open_sansbold;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:first-child {
+				padding-left: 25px;
+			}
+
+		}
+
+		.menu__parent {
+			margin-right: 15px;
+			
+			a {
+				background: url("../img/arrow-bottom.png") right 9px no-repeat;
+				padding-right: 15px;
+			}
+
+			&:hover {
+
+				.menu__children {
+					display: block;
+				}
+
+			}
+
+			&:after {
+				content: "";
+				height: 5px;
+				background: none;
+				position: absolute;
+				width: 100%;
+				bottom: -5px;
+				left: 0;
+			}
+
+		}
+
+		.menu__children {
+			position: absolute;
+			left: 0;
+			top: 36px;
+			margin-top: 5px;
+			background: $darkblue;
+			width: 180px;
+			padding: 10px 0 20px 25px;
+			box-sizing: border-box;
+			display: none;
+
+			li {
+				font-size: 16px;
+				line-height: 25px;
+				padding: 0;
+
+				a {
+					background: none;
+					padding: 0;
+
+					&:hover {
+						color: $blue;
+					}
+
+				}
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+			}
+
+			&:before {
+				content: "";
+				border: 5px solid transparent;
+   				border-bottom: 5px solid $darkblue;
+				position: absolute;
+				top: -10px;
+				display: block;
+			}
+
+		}
+
+	}
+
+	.menu__mobile {
+		display: none;
+		justify-content: space-between;
+		margin: 0 20px;
+	}
+
+	.menu__left {
+
+		> a {
+			display: block;
+			float: right;
+		}
+
+	}
+
+	.menu__right {
+		margin: auto 0;
+	}
+
+}
+
+@media (max-width: 960px) {
+	
+	.menu {
+
+		.menu__nav {
+			padding: 0 20px;
+		}
+
+	}
+
+}
+
+@media (max-width: 780px) {
+	
+	.menu {
+		padding: 10px 0;
+
+		.menu__nav {
+			display: none;
+			padding-top: 10px;
+
+			li:first-child {
+				padding-left: 0;
+			}
+
+			li {
+				padding: 0;
+				margin: 7px 0;
+			}
+
+			.menu__children {
+				display: block;
+				position: static;
+				top: auto;
+				left: auto;
+				padding-top: 0;
+				padding-bottom: 0;
+
+				&:before {
+					display: none;
+				}
+
+			}
+
+			.menu__parent {
+				margin-right: 0;
+
+				&:after {
+					display: none;
+				}
+
+				li {
+					margin: 0;
+				}
+
+			}
+
+		}
+
+		.menu__mobile {
+			display: flex;
+		}
+
+	}
+
+	.menu-active {
+
+		.menu__nav {
+			display: block;
+		}
+
+	}
+
+}
+
+@media (max-width: 480px) {
+	
+	.menu {
+
+		.menu__left {
+
+			> a {
+				display: none;
+			}
+
+		}
+
+	}
+
+}

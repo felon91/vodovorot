@@ -1,0 +1,69 @@
+.pricing {
+	margin: 45px 0 0;
+
+	.pricing__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.pricing__title {
+		font-size: 32px;
+		line-height: 35px;
+		font-family: neo_sans_probold;
+		margin: 30px 0;
+	}
+
+	.pricing__element {
+		flex-basis: 27%;
+		text-align: center;
+		margin-bottom: 50px;
+		width: 27%;
+
+		p {
+			margin: 0;
+			font-size: 16px;
+			line-height: 20px;
+			font-family: open_sansregular;
+		}
+
+		b {
+			font-size: 20px;
+			line-height: 25px;
+			font-family: open_sans_condensedbold;
+			margin: 5px 0;
+		}
+
+	}
+
+	+ .consultation {
+		margin-top: 0;
+	}
+
+}
+
+@media (max-width: 580px) {
+	
+	.pricing {
+
+		.pricing__element {
+			flex-basis: 45%;
+			width: 45%;
+		}
+		
+	}
+
+}
+
+@media (max-width: 480px) {
+	
+	.pricing {
+
+		.pricing__element {
+			flex-basis: 100%;
+			width: 100%;
+		}
+		
+	}
+
+}

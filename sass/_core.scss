@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+$blue: #00c5de;
+$darkblue: #0096a7;
+$white: #fff;
+$black: #000;
+$lightgray: #efefef;
+$gray: #dadada;
+$darkgray: #7f8080;
+$inputgray: #bababa;
+$buttonhover: #37cad9;
+$buttonactive: #8bf4ff;
+
+/**
+ * Основные стили
+ **/
+
+body {
+	font-family: open_sansregular, Arial, sans-serif;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100%;
+    height: auto;
+}
+
+.container {
+	@include min-max(320px, 100%, 0);
+}

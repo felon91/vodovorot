@@ -1,0 +1,66 @@
+.navigation {
+	margin-bottom: 100px;
+
+	ul {
+
+		li {
+			padding-left: 15px;
+			padding-bottom: 2px;
+
+			a {
+				font-size: 20px;
+				line-height: 35px;
+				text-decoration: none;
+				color: $black;
+				border-bottom: 1px solid $black;
+				font-family: open_sansbold;
+
+				&:hover {
+					color: $blue;
+					border-color: $blue;
+				}
+
+			}
+
+		}
+
+		.navigation__element-active {
+			background: $darkblue;
+			border-radius: 10px;
+			margin-right: 15px;
+			
+			a {
+				color: $white;
+				border: none;
+				background: url("../img/arrow-right.png") right 9px no-repeat;
+				padding-right: 12px;
+
+				&:hover {
+					color: $white;
+					border: none;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: 780px) {
+	
+	.navigation {
+		width: 50%;
+		margin: 0 0 30px 0;
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	.navigation {
+		width: 100%;
+	}
+
+}

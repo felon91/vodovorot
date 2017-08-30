@@ -1,0 +1,61 @@
+.hamburger {
+	cursor: pointer;
+	position: relative;
+	width: 40px;
+	height: 29px;
+	margin-bottom: 0;
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin-right: 15px;
+	margin-top: 5px;
+
+	.hamburger__global {
+		backface-visibility: hidden;
+		position: absolute;
+		left: 0;
+		border-top: 5px solid #fff;
+		width: 100%;
+		transition: 0.55s;
+	}
+
+	.hamburger__top {
+		top: 0;
+	}
+
+	.hamburger__middle {
+		top: 12px;
+	}
+
+	.hamburger__bottom {
+		top: 24px;
+	}
+
+	.hamburger__top-click {
+		backface-visibility: hidden;
+		top: 15px;
+		transform: rotate(50deg);
+		transition: 0.25s 0.25s;
+	}
+
+	.hamburger__middle-click {
+		opacity: 0;
+	}
+
+	.hamburger__bottom-click {
+		backface-visibility: hidden;
+		top: 15px;
+		transform: rotate(-410deg);
+		transition: 0.25s 0.25s;
+	}
+
+}
+
+@media (max-width: 480px) {
+	
+	.hamburger {
+		margin-top: 0;
+		float: none;
+	}
+
+}

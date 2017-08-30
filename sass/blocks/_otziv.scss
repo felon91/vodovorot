@@ -1,0 +1,93 @@
+.otziv {
+	
+	.otziv__title {
+		font-family: neo_sans_probold;
+		font-size: 32px;
+		line-height: 35px;
+		color: $black;
+	}
+
+	.otziv__element {
+		margin: 40px 0 70px;
+		overflow: hiddeh;
+	}
+
+	.otziv__photo {
+		float: left;
+		width: 140px;
+		margin-right: 20px;
+
+		p {
+			font-size: 16px;
+			text-align: center;
+			font-family: open_sansregular;
+			line-height: 20px;
+		}
+
+	}
+
+	.otziv__video {
+		position:relative;
+		padding-bottom:44.25%;
+		padding-top:30px;
+		height:0;
+		overflow:hidden;
+		margin: 15px 0;
+
+		iframe, object, embed {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+		}
+	}
+
+	.otziv__text {
+		background: $white;
+		border-radius: 10px;
+		margin-left: 160px;
+		padding: 20px 20px 40px;
+		box-sizing: border-box;
+
+		p {
+			font-size: 16px;
+			line-height: 20px;
+			font-family: open_sansregular;
+			margin: 0 0 20px 0;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		b {
+			font-family: open_sansbold;
+		}
+
+	}
+
+}
+
+@media (max-width: 580px) {
+	
+	.otziv {
+	
+		.otziv__photo {
+			float: none;
+			width: 140px;
+			margin: 0 auto 20px;
+		}
+
+		.otziv__element {
+			margin: 20px 0 35px;
+			overflow: hiddeh;
+		}
+
+		.otziv__text {
+			margin-left: 0;
+		}
+
+	}
+
+}

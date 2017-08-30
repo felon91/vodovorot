@@ -1,0 +1,38 @@
+.banner {
+	background: url("../img/bg.jpg") center no-repeat;
+	background-size: cover;
+	padding: 40px 0;
+
+	.banner__wrapper {
+		@include min-max(320px, 1200px, 40px);
+	}
+
+	.banner__title {
+		font-size: 45px;
+		line-height: 45px;
+		color: $white;
+		font-family: neo_sans_probold;
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-size: 22px;
+		line-height: 24px;
+		font-family: open_sansregular;
+		color: $white;
+		margin: 10px 0;
+	}
+
+}
+
+@media (max-width: 960px) {
+	
+	.banner {
+
+		.banner__wrapper {
+			padding: 0 20px;
+		}
+
+	}
+
+}

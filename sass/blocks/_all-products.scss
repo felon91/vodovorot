@@ -1,0 +1,48 @@
+.all-products, .all-otziv {
+	
+	a {
+		font-size: 16px;
+		line-height: 20px;
+		font-family: open_sans_condensedbold;
+		text-decoration: none;
+		color: $black;
+		width: 220px;
+		border-radius: 10px;
+		border: 1px solid $darkblue;
+		display: block;
+		margin: 15px auto 35px;
+		text-align: center;
+		background: $white;
+		padding: 7px 0 8px;
+		position: relative;
+
+		&:after {
+			background: url("../img/arrow-bottom-black.png") right center no-repeat;
+			content: "";
+			width: 10px;
+			height: 6px;
+			display: block;
+			position: absolute;
+			right: 25px;
+			top: 15px;
+		}
+
+		&:hover {
+			color: $blue;
+		}
+
+	}
+
+}
+
+.all-otziv {
+	margin-top: -40px;
+}
+
+@media (max-width: 580px) {
+
+	.all-otziv {
+		margin-top: -20px;
+	}
+
+}
