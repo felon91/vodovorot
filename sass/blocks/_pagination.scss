@@ -1,0 +1,37 @@
+.pagination {
+	margin: 30px 0;
+	
+	ul {
+		display: flex;
+		justify-content: center;
+
+		li {
+
+		}
+
+		a {
+			text-decoration: none;
+			color: $darkblue;
+			font-size: 25px;
+			line-height: 25px;
+			font-family: open_sansbold;
+			width: 37px;
+			box-sizing: border-box;
+			text-align: center;
+			display: inline-block;
+			padding: 6px 0;
+			border-radius: 10px;
+		}
+
+	}
+
+	.pagination__active {
+		
+		a {
+			background: $darkblue;
+			color: $white;
+		}
+
+	}
+
+}

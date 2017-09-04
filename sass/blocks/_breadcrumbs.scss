@@ -1,0 +1,44 @@
+.breadcrumbs {
+	@include min-max(320px, 1200px, 40px);
+	padding-top: 20px;
+
+	p {
+		margin: 0;
+		font-family: open_sansregular;
+		font-size: 14px;
+		color: #4c4d4e;
+	}
+
+	a {
+		text-decoration: none;
+		font-family: open_sansregular;
+		font-size: 14px;
+		color: $breadgray;
+
+		&:hover {
+			color: $blue;
+		}
+
+	}
+
+	span {
+		font-family: open_sansbold;
+		color: $black;
+
+	}
+
+}
+
+.breadcrumbs-gray {
+	background: $lightgray;
+	padding-bottom: 20px;
+}
+
+@media (max-width: 960px) {
+	
+	.breadcrumbs {
+		padding: 20px 20px 0 20px;
+
+	}
+
+}

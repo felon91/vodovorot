@@ -1,8 +1,10 @@
-  if($("input").is(".form__mask")) {
+if($("input").is(".form__mask")) {
   $(".form input").mask("+7 (999) 999-99-99");
 }
 
-  $(document).ready(function() {
+$(document).ready(function() {
+
+  $(".sticky-parent").stick_in_parent();
 
     var isAnimated = false;
     $(".faq__element a").on("click", function(e) {

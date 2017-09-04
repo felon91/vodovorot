@@ -1,0 +1,271 @@
+.article {
+	background-color: $white;
+	border-radius: 10px;
+	padding: 15px 30px;
+
+	h1 {
+		font-size: 40px;
+		line-height: 35px;
+		color: $black;
+		font-family: neo_sans_probold;
+	}
+
+	h2 {
+		font-size: 32px;
+    	line-height: 35px;
+   		font-family: neo_sans_probold;
+   		margin: 25px 0 12px 0;
+   		color: $black;
+
+   		+ p {
+   			margin-top: 12px;
+   		}
+	}
+
+	h3 {
+		font-size: 22px;
+    	line-height: 35px;
+   		font-family: neo_sans_probold;
+   		margin: 25px 0 12px 0;
+   		color: $black;
+
+   		+ p {
+   			margin-top: 12px;
+   		}
+	}
+
+	h4 {
+		font-size: 20px;
+    	line-height: 35px;
+   		font-family: neo_sans_proregular;
+   		margin: 25px 0 12px 0;
+   		color: $black;
+
+   		+ p {
+   			margin-top: 12px;
+   		}
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 25px;
+		margin: 15px 0 15px;
+
+		+ ul, + ol {
+			margin-top: -8px;
+		}
+
+	}
+
+	a {
+		border-bottom: 1px solid $darkblue;
+		color: $black;
+		text-decoration: none;
+
+		&:hover {
+			color: $blue;
+			text-decoration: none;
+			border-bottom: 1px solid $blue;
+		}
+
+	}
+
+	ul {
+		margin: 15px 0 25px 18px;
+
+		li {
+			font-size: 16px;
+			margin: 9px 0;
+			line-height: 25px;
+
+			&:before {
+				content: '';
+				float: left;
+				width: 11px;
+				height: 12px;
+				border-bottom: 2px solid $darkblue;;
+				margin-left: -18px;
+				margin-right: 5px;
+			}
+
+			p {
+				margin: 9px 0;
+			}
+			
+		}
+
+		a {
+			text-decoration: none;
+			border-bottom: 1px dashed $darkblue;
+			color: #000;
+			font-family: neo_sans_proregular;
+
+			&:hover {
+				color: $blue;
+			}
+
+		}
+
+	}
+
+	ol {
+		counter-reset: olItemCounter;
+		margin: 15px 0 25px 0;
+
+		li {
+			font-size: 16px;
+			margin: 9px 0;
+			line-height: 25px;
+
+			&:before {
+				counter-increment: olItemCounter;
+				content: counter(olItemCounter)'.';
+				float: left;
+				font-size: 16px;
+				color: $darkblue;
+				margin-right: 8px;
+				width: auto;
+				height: auto;
+				background: none;
+				border-radius: 0;
+				padding-top: 0;
+				font-weight: normal;
+				font-family: neo_sans_probold;
+			}
+
+			ol {
+				counter-reset: olItemCounter2;
+				margin-left: 8px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+
+				li {
+
+					&:before {
+						counter-increment: olItemCounter2;
+						content: counter(olItemCounter) '.' counter(olItemCounter2);
+						background: none;
+						color: $darkblue;
+						font-weight: bold;
+					}
+
+				}
+
+			}
+
+			ul {
+				margin-left: 38px;
+				counter-reset: none;
+				margin-top: 10px;
+				margin-bottom: 10px;
+
+				li {
+
+					&:before {
+						counter-increment: none;
+						content: '';
+						float: left;
+						width: 11px;
+						height: 12px;
+						border-bottom: 2px solid $darkblue;
+						margin-left: -18px;
+					}
+					
+				}
+
+			}
+
+			p {
+				margin: 9px 0;
+			}
+
+		}
+
+		a {
+			text-decoration: none;
+			border-bottom: 1px dashed $darkblue;
+			color: #000;
+			font-family: neo_sans_proregular;
+
+			&:hover {
+				color: $blue;
+			}
+
+		}
+
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		border-spacing: 0;
+		border-radius: 14px;
+
+		thead {
+			background: $darkblue;
+			
+			tr {
+
+				th {
+					text-align: left;
+					color: #fff;
+					font-size: 16px;
+					line-height: 25px;
+					font-family: open_sansbold;
+					padding: 11px 10px 11px 15px;
+					font-weight: normal;
+					hyphens: auto;
+					vertical-align: middle;
+				}
+
+			}
+
+		}
+
+		tr {
+
+			td {
+				padding: 10px 15px;
+				background: $lightgray;
+				vertical-align: middle;
+				font-size: 16px;
+				line-height: 25px;
+				hyphens: auto;
+				font-family: open_sansregular;
+				font-weight: normal;
+
+			}
+
+			&:nth-child(odd) {
+				td {
+					background-color: #fff;
+				}
+			}
+
+		}
+
+	}
+
+	.table {
+		overflow: auto;
+		margin: 20px 0;
+		border-radius: 15px;
+		border-left: 1px solid $lightgray;
+		border-right: 1px solid $lightgray;
+		border-bottom: 1px solid $lightgray;
+	}
+
+}
+
+@media (max-width: 560px) {
+	
+	.article {
+		padding: 15px;
+		
+		table {
+			min-width: 500px;
+		}
+
+	}
+
+}

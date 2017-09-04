@@ -1,0 +1,148 @@
+.table-of-contents {
+	background: $lightgray;
+	margin: 20px 0;
+	padding: 15px 20px;
+	width: 75%;
+	border-radius: 10px;
+	box-sizing: border-box;
+	
+
+	p {
+		margin: 0;
+
+		+ ol, + ul {
+			margin-top: 15px;
+		}
+
+	}
+
+	ol {
+		counter-reset: olItemCounter;
+
+		li {
+			font-size: 16px;
+			margin: 9px 0;
+			line-height: 25px;
+
+			&:before {
+				counter-increment: olItemCounter;
+				content: counter(olItemCounter)'.';
+				float: left;
+				font-size: 16px;
+				color: $darkblue;
+				margin-right: 8px;
+				width: auto;
+				height: auto;
+				background: none;
+				border-radius: 0;
+				padding-top: 0;
+				font-weight: normal;
+				font-family: neo_sans_probold;
+			}
+
+			ol {
+				counter-reset: olItemCounter2;
+				margin-left: 20px;
+
+				li {
+
+					ul {
+						margin-left: 51px;
+					}
+
+					&:before {
+						counter-increment: olItemCounter2;
+						content: counter(olItemCounter) '.' counter(olItemCounter2);
+					}
+
+				}
+
+			}
+
+			ul {
+				margin-left: 41px;
+				counter-reset: none;
+
+				li {
+
+					&:before {
+						counter-increment: none;
+						content: '';
+						float: left;
+						width: 11px;
+						height: 12px;
+						font-size: 16px;
+						border-bottom: 2px solid $darkblue;
+						margin-left: -18px;
+						background: none;
+						border-radius: 0;
+						padding-top: 0;
+						font-weight: normal;
+						font-family: neo_sans_probold;
+					}
+					
+				}
+
+			}
+
+		}
+
+		a {
+			text-decoration: none;
+			border-bottom: 1px dashed $darkblue;
+			color: #000;
+			font-family: neo_sans_proregular;
+			font-size: 16px;
+
+			&:hover {
+				color: $blue;
+			}
+
+		}
+
+	}
+
+	ul {
+		margin-left: 18px;
+
+		li {
+			font-size: 16px;
+			margin: 9px 0;
+			line-height: 25px;
+
+			&:before {
+				content: '';
+				float: left;
+				width: 11px;
+				height: 12px;
+				border-bottom: 2px solid $darkblue;
+				margin-left: -18px;
+				margin-right: 5px;
+			}
+			
+		}
+
+		a {
+			text-decoration: none;
+			border-bottom: 1px dashed $darkblue;
+			color: #000;
+			font-family: neo_sans_proregular;
+			font-size: 16px;
+
+			&:hover {
+				color: $blue;
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: 560px) {
+	
+	.table-of-contents {
+		width: 100%;
+	}
+
+}

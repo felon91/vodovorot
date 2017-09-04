@@ -1,0 +1,91 @@
+.icons {
+	@include min-max(320px, 1200px, 40px);
+	display: flex;
+	justify-content: space-between;
+	margin: 35px auto;
+
+	.icons__element {
+		text-align: center;
+
+		div {
+			height: 80px;
+		}
+
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 20px;
+		color: $black;
+	}
+
+	a {
+		text-decoration: none;
+		color: $black;
+		border-bottom: 1px solid $darkblue;
+
+		&:hover {
+			color: $darkblue;
+		}
+
+	}
+
+}
+
+@media (max-width: 960px) {
+	
+	.icons {
+		padding: 0 20px;
+	}
+
+}
+
+@media (max-width: 880px) {
+	
+	.icons {
+
+		.icons__element {
+			width: 24%;
+			flex-basis: 24%;
+		}
+
+		p {
+
+			br {
+				display: none;
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: 760px) {
+	
+	.icons {
+		flex-wrap: wrap;
+		margin: 0 auto;
+
+		.icons__element {
+			width: 49%;
+			flex-basis: 49%;
+			margin-bottom: 35px;
+		}
+
+	}
+
+}
+
+@media (max-width: 400px) {
+	
+	.icons {
+
+		.icons__element {
+			width: 100%;
+			flex-basis: 100%;
+		}
+
+	}
+
+}

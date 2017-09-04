@@ -1,0 +1,89 @@
+.big-gallery {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	a {
+		text-align: center;
+		text-decoration: none;
+		border: none;
+		flex-basis: 33%;
+		width: 33%;
+		outline: none;
+		margin-bottom: 5px;
+		position: relative;
+
+		&:hover {
+			border: none;
+		}
+
+		&:before {
+			background: url('../img/zoom.png') center no-repeat;
+			width: 39px;
+			height: 40px;
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin: -20px 0 0 -19.5px;
+			opacity: 0;
+			transition: all 0.5s;
+			z-index: 10;
+		}
+
+		&:after {
+			background-color: rgba(0, 0, 0, 0.7);
+			width: 100%;
+			height: 100%;
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: 0;
+			transition: all 0.5s;
+		}
+
+		&:hover:before, &:hover:after {
+			opacity: 1;
+		}
+
+
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+}
+
+@media (max-width: 560px) {
+	
+	.big-gallery {
+		
+		a {
+			flex-basis: 49.5%;
+			width: 49.5%;
+		}
+
+	}
+
+}
+
+@media (max-width: 420px) {
+	
+	.big-gallery {
+		
+		a {
+			flex-basis: 100%;
+			width: 100%;
+		}
+
+		img {
+			width: 100%;
+		}
+
+	}
+
+}

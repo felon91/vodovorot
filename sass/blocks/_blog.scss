@@ -1,0 +1,142 @@
+.blog {
+	
+	.blog__element {
+		background: $white;
+		border-radius: 10px;
+		padding: 30px 30px 20px 30px;
+		margin: 20px 0;
+
+		img {
+			width: 100%;
+		}
+
+		.blog__title {
+			text-decoration: none;
+			color: $black;
+			font-family: neo_sans_probold;
+			font-size: 32px;
+			line-height: 35px;
+			margin: 10px 0 0;
+			display: inline-block;
+
+			&:hover {
+				color: $blue;
+			}
+
+		}
+
+		.blog__read {
+			font-family: open_sansbold;
+			color: $black;
+			font-size: 16px;
+			line-height: 25px;
+			border: 1px solid $darkblue;
+			text-decoration: none;
+			width: 220px;
+			display: inline-block;
+			border-radius: 10px;
+			padding: 5px 0 5px 40px;
+			position: relative;
+			box-sizing: border-box;
+
+			&:before {
+				background: url("../img/read-arrow.png") right center no-repeat;
+				content: "";
+				width: 19px;
+				height: 13px;
+				display: block;
+				position: absolute;
+				right: 35px;
+				top: 50%;
+				margin-top: -6.5px;
+			}
+
+			&:hover {
+				color: $blue;
+			}
+
+		}
+
+	}
+
+	.blog__bottom {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		.blog__read {
+
+		}
+
+		.blog__info {
+			font-size: 16px;
+			line-height: 25px;
+			color: $bloggray;
+			font-family: open_sansregular;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.blog__view {
+			
+			img {
+				position: relative;
+				top: 1px;
+			}
+			
+		}
+
+		.blog__comments {
+			
+			img {
+				position: relative;
+				top: 2px;
+			}
+			
+		}
+
+		img {
+			width: auto;
+		}
+
+		span {
+			margin: auto 30px auto 0;
+
+			&:last-child {
+				margin: auto 0;
+			}
+
+		}
+
+
+	}
+
+}
+
+@media (max-width: 580px) {
+	
+	.blog {
+
+		.blog__element {
+			padding: 15px;
+		}
+
+		.blog__bottom {
+			
+			.blog__read {
+				margin: 0 auto;
+			}
+
+			.blog__info {
+				flex-basis: 100%;
+				width: 100%;
+				justify-content: center;
+				margin-top: 10px;
+			}
+
+		}
+		
+	}
+
+}
+			

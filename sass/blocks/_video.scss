@@ -4,7 +4,7 @@
   padding-top:30px;
   height:0;
   overflow:hidden;
-  margin: 15px 0;
+  margin: 15px 0 35px;
   
   iframe, object, embed {
     position:absolute;
@@ -12,6 +12,10 @@
     left:0;
     width:100%;
     height:100%;
+  }
+
+  + .otziv {
+    margin-top: 55px;
   }
 
 }

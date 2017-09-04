@@ -1,5 +1,6 @@
 .navigation {
 	margin-bottom: 100px;
+	margin-top: 15px;
 
 	ul {
 
@@ -51,6 +52,7 @@
 @media (max-width: 780px) {
 	
 	.navigation {
+		display: none;
 		width: 50%;
 		margin: 0 0 30px 0;
 	}

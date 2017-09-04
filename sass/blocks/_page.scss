@@ -1,0 +1,10 @@
+.page {
+	@include min-max(320px, 1200px, 40px);
+	margin: 35px auto;
+
+	.article {
+		border-radius: 0;
+		padding: 0;
+	}
+
+}

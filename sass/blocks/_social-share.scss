@@ -1,0 +1,58 @@
+.social-share {
+	display: flex;
+	margin: 20px 0 0;
+	
+	ul {
+		margin: 0;
+
+		li {
+
+			&:before {
+				background: none;
+				border: none;
+
+			}
+
+			span {
+				margin-top: 0;
+			}
+
+		}
+
+		a {
+			border-bottom: none;
+
+			&:hover {
+				border-bottom: none;
+			}
+
+		}
+
+	}
+
+	.ya-share2 {
+		margin-left: 15px;
+	}
+
+	span {
+		font-size: 16px;
+		line-height: 25px;
+		font-family: open_sansregular;
+		font-weight: normal;
+		color: $bloggray;
+	}
+
+
+}
+
+@media (max-width: 560px) {
+	
+	.social-share {
+
+		span {
+			font-size: 14px;
+		}
+
+	}
+
+}

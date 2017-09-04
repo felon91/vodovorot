@@ -1,0 +1,16 @@
+.warning {
+	background: $lightgray;
+	border-left: 14px solid $darkblue;
+	padding: 8px 0 5px;
+	margin: 20px 0;
+	border-radius: 15px;
+	
+	p {
+		color: $black;
+		font-size: 16px;
+		line-height: 25px;
+		font-family: open_sansregular;
+		padding: 0 25px;
+	}
+
+}
